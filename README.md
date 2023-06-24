@@ -1,1 +1,0 @@
-# andrewjumanca.github.io
