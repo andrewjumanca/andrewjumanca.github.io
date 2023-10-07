@@ -7,17 +7,17 @@ const Sidebar: React.FC = () => {
         <ul>
           <li>
             <Link href="/about">
-              <a>About</a>
+              <span>About</span>About
             </Link>
           </li>
           <li>
             <Link href="/experiences">
-              <a>Experiences</a>
+              <span>Experiences</span>
             </Link>
           </li>
           <li>
             <Link href="/projects">
-              <a>Projects</a>
+              <span>Projects</span>
             </Link>
           </li>
         </ul>
