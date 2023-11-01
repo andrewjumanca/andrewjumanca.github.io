@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
+import styles from '.'
 
 function folio({ Component, pageProps }: AppProps) {
-    return <>
-    ***This website is a work in progress***<Component {...pageProps} /></>
+    return <><Component {...pageProps} /></>
 }
 export default folio

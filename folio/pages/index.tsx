@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 const LandingPage: React.FC = () => {
     return (
         <Layout>
-            <div>
+            <div className="px-page">
             </div>
         </Layout>
       );

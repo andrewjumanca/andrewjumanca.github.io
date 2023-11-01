@@ -1,23 +1,29 @@
-import Link from 'next/link';
+import Link from 'next/link'
+import '../styles/global.css'
 
 const Sidebar: React.FC = () => {
   return (
     <div className="sidebar">
       <nav>
-        <ul>
+        <ul className='navbar'>
+          <li>
+            <Link href="/">
+              <span>home</span>
+            </Link>
+          </li>
           <li>
             <Link href="/about">
-              <span>About</span>About
+              <span>about me</span>
             </Link>
           </li>
           <li>
             <Link href="/experiences">
-              <span>Experiences</span>
+              <span>experiences</span>
             </Link>
           </li>
           <li>
             <Link href="/projects">
-              <span>Projects</span>
+              <span>projects</span>
             </Link>
           </li>
         </ul>
