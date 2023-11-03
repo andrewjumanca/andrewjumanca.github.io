@@ -7,7 +7,7 @@ type LayoutProps = {
   };
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {  return (
-    <div className="layout">
+    <div className="px-page">
       <header>
       </header>
       <Sidebar />

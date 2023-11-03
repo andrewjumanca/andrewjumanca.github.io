@@ -3,8 +3,8 @@ import '../styles/global.css'
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="sidebar">
-      <nav>
+    <div>
+      <nav className='sidebar'>
         <ul className='navbar'>
           <li>
             <Link href="/">

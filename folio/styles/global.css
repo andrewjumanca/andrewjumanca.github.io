@@ -3,9 +3,27 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.__next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure it spans the viewport height */
+}
+
 /* Your custom global styles here */
 body {
-  background-color: #ded9d9;
+  background-color: #101010;
+  max-width: 1080px; 
+	margin: 0 auto !important; 
+	float: none !important;
+  /* REMOVE THIS COLOR CHANGE */
+  color: aliceblue;
+}
+
+.px-page {
+  max-width: 75%;
+  margin: auto;
 }
 
 .layout {
@@ -13,25 +31,87 @@ body {
   padding-right: 6rem;
 }
 
+section {
+  display: block;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   list-style: none; /* Remove default list styles */
-  padding: 2rem 0; /* Add padding to the top and bottom */
-  margin: 0; /* Remove default margin */
-  width: 60%; /* Ensure it spans the entire width */
+  padding: 5% 5% 5%; /* Add padding to the top and bottom */
+  margin: 2%; /* Remove default margin */
+  width: 60%;
 }
 
-.navbar li a span {
+.navbar span {
   flex: 1; /* Make them stretch evenly */
   margin-right: 10px; /* Optional: Add some spacing between items */
-  transition: font-size 0.5s, color 0.5s; /* Increase the transition duration for transform */
+  transition: font-size 0.5s, color 0.5s; /* Add a transition for font-size and color */
+  font-size: 16px; /* Initial font size */
+  color: #ffffff;
+  padding: 0.25rem 0.5rem 0.25rem;
+}
+
+.navbar span:hover {
+  color: #2b3eb9; /* Change the text color on hover */
+  font-size: 20px; /* Increase the font size on hover */
+}
+
+/* Index Page */
+
+.index-header {
+  display: flex;
+  align-items: center;
+}
+
+.index-header-text-container {
+  margin-left: 20px;
+}
+
+.rounded-image {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.welcome-header-font {
+  font-weight: bold;
+  padding-bottom: 2rem;
 }
 
 
+/* Experiences page */
+.timeline {
+  position: relative;
+  padding: 20px;
+}
 
-.navbar li a span:hover {
-  color: #787572;
-  /* transform: scale(1.08); */
-  font-size: 1.08em;
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 2px; /* Line width */
+  height: 100%;
+  background-color: #999; /* Line color */
+  left: 50%; /* Adjust to position the line relative to the container */
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  background-color: #3f3f3f;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
 }
