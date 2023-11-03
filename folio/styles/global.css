@@ -89,29 +89,25 @@ section {
 
 
 /* Experiences page */
-.timeline {
-  position: relative;
-  padding: 20px;
+
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  border:solid 1px #ffffff !important;
+  background: #111111 !important;
 }
 
-.timeline-item {
-  position: relative;
-  margin: 20px 0;
+.work-icon {
+  background: rgb(240, 233, 89);
+  color: #fff;
 }
 
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  width: 2px; /* Line width */
-  height: 100%;
-  background-color: #999; /* Line color */
-  left: 50%; /* Adjust to position the line relative to the container */
-  transform: translateX(-50%);
+.school-icon {
+  background: rgb(204, 47, 16);
+  color: #281c1c;
 }
 
-.timeline-content {
-  background-color: #3f3f3f;
-  padding: 20px;
-  border-radius: 5px;
-  position: relative;
+.internship-icon {
+  background: rgb(16, 60, 204);
+  color: #fff;
 }
