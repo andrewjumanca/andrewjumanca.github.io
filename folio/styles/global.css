@@ -87,9 +87,22 @@ section {
   padding-bottom: 2rem;
 }
 
-
 /* Experiences page */
 
+.title-organization-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-timeline-element-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: large;
+}
+
+.vertical-timeline-element-organization {
+  font-style: italic;
+}
 
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
@@ -98,16 +111,38 @@ section {
 }
 
 .work-icon {
-  background: rgb(240, 233, 89);
+  background: rgb(255, 255, 255);
   color: #fff;
+}
+
+.timeline-element-icon-work {
+  width:50px !important;
+  height:50px !important; 
+  padding-bottom: 10px;
 }
 
 .school-icon {
-  background: rgb(204, 47, 16);
+  background: rgb(255, 255, 255);
   color: #281c1c;
 }
 
+.timeline-element-icon-school {
+  width:50px !important;
+  height:50px !important; 
+  padding-bottom: 15px;
+}
+
 .internship-icon {
-  background: rgb(16, 60, 204);
+  background: rgb(255, 255, 255);
   color: #fff;
 }
+
+.timeline-element-icon-internshp {
+  width:50px !important;
+  height:50px !important; 
+  padding-bottom: 8px;
+}
+
+/* .vertical-timeline-element-icon {
+   Override React vertical timeline element icon CSS here usign this selector 
+} */

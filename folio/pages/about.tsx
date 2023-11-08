@@ -13,14 +13,14 @@ const About: React.FC = () => {
                     <div className='index-header'>
                     <div className='index-header-text-container'>
                         <h1 className='header'>
-                            What do I do?
+                            more to come soon...
                         </h1>
-                        <h1 className='header'>
+                        {/* <h1 className='header'>
                             Why software?
                         </h1>
                         <h1 className='header'>
                             Some of my hobbies:
-                        </h1>
+                        </h1> */}
                     </div>
                         
                     </div>
