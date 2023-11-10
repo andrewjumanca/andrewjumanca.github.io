@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
                 <h1 className='Projects'></h1>
                 <div>
                     <h1>
-                        I'm currently working a creative way to share info about the projects I'm working on!
+                        Im currently working a creative way to share info about the projects Im working on!
                     </h1>
                 </div>
                 <div>
