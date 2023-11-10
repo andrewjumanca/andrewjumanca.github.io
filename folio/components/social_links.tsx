@@ -4,21 +4,23 @@ const SocialLinks: React.FC = () => {
     return (
         <div className="social-media-container">
             <div className="social-icon">
-                <a href="https://www.linkedin.com/" target="_blank">
-                <img src="linkedin-icon.png" alt="LinkedIn" />
+                <a href="https://www.linkedin.com/in/andrew-jumanca" target="_blank">
+                    <img src="linkedin_icon.svg" alt="LinkedIn" />
                 </a>
             </div>
             <div className="social-icon">
-                <a href="https://www.instagram.com/" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram" />
+                <a href="https://www.instagram.com/andrewjumanca/" target="_blank">
+                    <img src="instagram_icon.svg" alt="Instagram" />
                 </a>
             </div>
             <div className="social-icon">
-                <a href="https://github.com/" target="_blank" />
-                <img src="github-icon.png" alt="GitHub">
+                <a href="https://github.com/andrewjumanca" target="_blank" >
+                    <img src="github_icon.svg" alt="GitHub" />
                 </a>
             </div>
         </div>
 
     );
 };
+
+export default SocialLinks;

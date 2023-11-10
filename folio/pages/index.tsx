@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Image from 'next/image';
+import SocialLinks from '../components/social_links';
 
 const LandingPage: React.FC = () => {
     return (
@@ -20,8 +21,9 @@ const LandingPage: React.FC = () => {
                         className="rounded-image"
                     />
                     <div className='index-header-text-container'>
+                        <SocialLinks></SocialLinks>
                         <h1 className='header'>
-                            Hi, I'm Andrew. Welcome to my W.I.P. portfolio page!
+                            Hi, I'm Andrew, welcome to my portfolio website. 
                         </h1>
                         <h2>
                             Check out the "experiences" section to learn more about my work.
