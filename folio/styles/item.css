@@ -159,14 +159,14 @@ body {
     grid-template-columns: 100px 1fr;
     padding-top: 100px;
   }
-
+/* 
   section div.item-head, div.item-body {
     border: 2px dotted var(--accent);
   }
   
   div.item-body div {
     border: 2px dotted red;
-  }
+  } */
 
   .item-head {
     height: 80px;
