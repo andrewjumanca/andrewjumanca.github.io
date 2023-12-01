@@ -48,9 +48,12 @@ body {
     font-weight: 400;
     margin: 50px 0 10px;
   }
-  
-  p {
-    margin: 0 0 30px 0;
+
+  .item-subcontainer p {
+    font-size: 18px;
+  }
+
+  .item-subcontainer li {
     font-size: 18px;
   }
   
@@ -157,10 +160,12 @@ body {
       "c b b";
     grid-template-rows: 100px;
     grid-template-columns: 100px 1fr;
-    padding-top: 100px;
   }
-/* 
-  section div.item-head, div.item-body {
+
+
+
+  /* SCAFFOLDING OUTLINE TO HELP STRUCTURE DIV ELEMENTS ON PROJECTS PAGE!!! */
+  /* section div.item-title-link, div.item-body {
     border: 2px dotted var(--accent);
   }
   
@@ -168,16 +173,21 @@ body {
     border: 2px dotted red;
   } */
 
-  .item-head {
+  .item-title-link span {
     height: 80px;
     grid-area: a;
     display: flex; 
     align-items: center;
-  }
-
-  .item-head h2 {
+    transition: font-size 0.5s, color 0.5s;
     margin: 0 0 0 5px;
+    width: fit-content;
     font-size: xx-large;
+    text-decoration: underline;
+  }
+  
+  .item-title-link span:hover {
+    color: #2b3eb9;
+    font-size: 35px;
   }
 
   .item-body {

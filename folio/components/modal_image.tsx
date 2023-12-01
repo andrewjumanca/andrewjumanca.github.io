@@ -14,7 +14,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
   alt,
   width,
   height,
-  className = ''
+  className
 }) => {
   const [showImage, setShowImage] = useState(false);
 
@@ -30,7 +30,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
           alt={alt}
           width={width}
           height={height}
-          className="subcontainer-image"
+          className={className}
         />
       </div>
 
@@ -42,7 +42,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
               alt={alt}
               width={width}
               height={height}
-              className="subcontainer-image"
+              className={className}
             />
           </div>
         </div>

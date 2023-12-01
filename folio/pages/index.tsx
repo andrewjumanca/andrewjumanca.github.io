@@ -23,7 +23,7 @@ const LandingPage: React.FC = () => {
                     <div className='index-header-text-container'>
                         <SocialLinks></SocialLinks>
                         <h1 className='header'>
-                            Hi, Im Andrew, welcome to my portfolio website. 
+                            Hi, I&apos;m Andrew, welcome to my portfolio website. 
                         </h1>
                         <h2>
                             Check out the experiences section to learn more about my work.

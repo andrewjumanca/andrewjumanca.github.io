@@ -51,13 +51,13 @@ let timelineElements = [
         title: "Student",
         organization: "TBD",
         location: "",
-        description: "Pursuing my masters in computer science, with a focus in interactive intelligence.",
-        date: "September 2024 - May 2026",
+        description: "Pursuing my masters of computer science",
+        date: "September 2024",
         icon: "school"
     },
     {
         id: 2,
-        title: "Freelance Developer",
+        title: "Software Consultant & Developer",
         organization: "Self-Employed",
         location: "Seattle, WA",
         description: "Building websites for local businesses, automating marketing, and working with professionals in a variety of industries to build them custom software. Applications in client-intake acceleration, data visualization, and service-progression tracking.",
@@ -88,7 +88,7 @@ let timelineElements = [
         title: "Research Assistant",
         organization: "Genetically Engineered Material Science & Engineering Center",
         location: "Seattle, WA",
-        description: "Through my university's material science department, I took part in replicating methods in bioinformatics and computational biology by assisting PhD candidates in their endeavors. I explored statistical methods in biocomputation (Fourier transforms, cross-correlations, sequence encoding, neural networks) in order to analyze and predict protein-peptide binding affinity.",
+        description: "Through material science department at the University of Washington, I took part in replicating methods in bioinformatics and computational biology by assisting PhD candidates in their endeavors. I explored statistical methods in biocomputation (Fourier transforms, cross-correlations, sequence encoding, neural networks) in order to analyze and predict protein-peptide binding affinity.",
         date: "January 2020 - January 2022",
         icon: "internship"
     },

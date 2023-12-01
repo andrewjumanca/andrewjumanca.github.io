@@ -55,6 +55,9 @@ section {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+  padding-top: 3%;
+  /* for scaffolding */
+  /* border: 2px dotted white; */
 }
 
 .navbar {
@@ -63,21 +66,34 @@ section {
   list-style: none; /* Remove default list styles */
   padding: 5% 5% 5%; /* Add padding to the top and bottom */
   margin: 2%; /* Remove default margin */
-  width: 60%;
+  width: 80%;
+  height: 140px;
+  overflow: hidden;
 }
+
+/* for scaffolding */
+/* ul.navbar {
+  border: 2px dotted white;
+} */
 
 .navbar span {
   flex: 1; /* Make them stretch evenly */
   margin-right: 10px; /* Optional: Add some spacing between items */
-  transition: font-size 0.5s, color 0.5s; /* Add a transition for font-size and color */
-  font-size: 16px; /* Initial font size */
+  transition: font-size 0.5s, color 0.5s;   /* Add a transition for font-size and color */
+  /* font-size: 16px; Initial font size */
+  font-size: 18px;
+  font-weight: 550;
   color: #ffffff;
-  padding: 0.25rem 0.5rem 0.25rem;
+  padding: 0.25rem 0.2rem 0.25rem;
+
+  /* for scaffolding and sizing */
+  /* border: 2px dotted red; */
 }
+
 
 .navbar span:hover {
   color: #2b3eb9; /* Change the text color on hover */
-  font-size: 20px; /* Increase the font size on hover */
+  font-size: 24px; /* Increase the font size on hover */
 }
 
 /* Index Page */
@@ -127,6 +143,11 @@ section {
 .title-organization-container {
   display: flex;
   justify-content: space-between;
+}
+
+div.vertical-timeline-element {
+  /* border:solid 1px red !important; */
+  padding-bottom: 50px !important;
 }
 
 .vertical-timeline-element-title {
@@ -184,15 +205,22 @@ section {
 
 /* Project Item Rows on Projects page */
 
+div.dual-image-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
 div.project-items-container {
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
 
-/* div.item-subcontainer {
-  
-} */
+.vertical-timeline {
+  /* border: 2px dotted green !important; */
+  margin-bottom: 0 !important;
+}
 
 .subcontainer-image {
   width: auto;

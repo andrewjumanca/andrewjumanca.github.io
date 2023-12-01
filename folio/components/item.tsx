@@ -1,13 +1,15 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import '../styles/item.css';
+import Link from "next/link";
 
 interface ItemProps {
     title: string;
+    project_link: string;
     content: React.ReactNode;
 }
 
-export const Item: React.FC<ItemProps> = ({ title, content }) => {
+export const Item: React.FC<ItemProps> = ({ title, content, project_link }) => {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -17,7 +19,6 @@ export const Item: React.FC<ItemProps> = ({ title, content }) => {
 
     return (
         <section 
-            // style={{opacity}}
             ref={ref}>
             <figure className="progress">
                     <svg id="progress" width="75" height="75" viewBox="0 0 100 100">
@@ -32,9 +33,11 @@ export const Item: React.FC<ItemProps> = ({ title, content }) => {
                         />
                     </svg>
                 </figure>
-            <div className="item-head">
-                <h2>{title}</h2>
-            </div>
+                <div className="item-title-link">
+                        <Link href={project_link} target="_blank">
+                            <span>{title}</span>
+                        </Link>
+                </div>
             <div className="item-body">
                 {content}
             </div>
