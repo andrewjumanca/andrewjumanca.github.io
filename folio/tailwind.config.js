@@ -6,7 +6,11 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      minHeight: (theme) => ({
+        ...theme('spacing'),
+      }),
+    },
   },
   variants: {},
   plugins: [],
