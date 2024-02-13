@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../styles/global.css";
+import Image from 'next/image';
 
 interface ImageModalProps {
   src: string;
@@ -25,25 +26,13 @@ const ImageModal: React.FC<ImageModalProps> = ({
   return (
     <div className="image-modal">
       <div className={`subcontainer-image ${className}`} onClick={toggleImage}>
-        <img
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          className={className}
-        />
+        <Image src={src} alt={alt} width={width} height={height} className={className} />
       </div>
 
       {showImage && (
         <div className="modal-overlay" onClick={toggleImage}>
           <div className="modal-content">
-            <img
-              src={src}
-              alt={alt}
-              width={width}
-              height={height}
-              className={className}
-            />
+            <Image src={src} alt={alt} width={width} height={height} className={className} />
           </div>
         </div>
       )}

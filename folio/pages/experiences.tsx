@@ -1,8 +1,8 @@
 import Layout from "../components/layout";
-// import { ReactComponent as WorkIcon } from "./next.svg";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import '../styles/global.css'
+import Image from 'next/image';
 
 const Experiences: React.FC = () => {
     return (
@@ -16,7 +16,7 @@ const Experiences: React.FC = () => {
                             <VerticalTimelineElement
                                 key={element.id}
                                 date={element.date}
-                                icon={<img src={`./${element.icon}.svg`} className={"timeline-element-icon-" + element.icon}/>}
+                                icon={<Image src={`./${element.icon}.svg`} className={"timeline-element-icon-" + element.icon} alt={"timeline element"}/>}
 
                                 dateClassName="timeline-date"
                                 iconClassName={element.icon + "-icon"} // Apply the class name
