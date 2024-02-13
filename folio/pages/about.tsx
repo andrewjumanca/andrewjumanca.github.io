@@ -13,7 +13,7 @@ const About: React.FC = () => {
                     <div className='index-header'>
                     <div className='index-header-text-container'>
                         <h1 className='header'>
-                            more to come soon...
+                            more to come soon...after I convert all my CSS to Tailwind!
                         </h1>
                         {/* <h1 className='header'>
                             Why software?
