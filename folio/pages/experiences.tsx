@@ -48,10 +48,10 @@ const Experiences: React.FC = () => {
 let timelineElements = [
     {
         id: 1,
-        title: "Student",
+        title: "Master's Student",
         organization: "TBD",
         location: "",
-        description: "Pursuing my masters of computer science",
+        description: "Pursuing a M.S. in Data Science at the University of Washington.",
         date: "September 2024",
         icon: "school"
     },
